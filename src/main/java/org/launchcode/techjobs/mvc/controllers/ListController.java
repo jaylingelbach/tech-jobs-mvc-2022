@@ -22,6 +22,7 @@ public class ListController {
     static HashMap<String, String> columnChoices = new HashMap<>();
     static HashMap<String, Object> tableChoices = new HashMap<>();
 
+    // constructor that populates column and table choices.
     public ListController () {
         columnChoices.put("all", "All");
         columnChoices.put("employer", "Employer");
@@ -33,6 +34,7 @@ public class ListController {
         tableChoices.put("location", JobData.getAllLocations());
         tableChoices.put("positionType", JobData.getAllPositionTypes());
         tableChoices.put("coreCompetency", JobData.getAllCoreCompetency());
+
     }
 
     @GetMapping(value = "")
